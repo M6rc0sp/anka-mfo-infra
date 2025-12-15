@@ -5,14 +5,14 @@ Implementar o motor de cálculo de projeção patrimonial, considerando alocaç�
 
 ---
 
-## 🎯 Entregáveis desta Fase
+### 🎯 Entregáveis desta Fase
 
-- [ ] Motor de projeção implementado
-- [ ] Cálculos de juros compostos funcionando
-- [ ] Timeline de movimentações processada
-- [ ] Seguros integrados no cálculo
-- [ ] Status de vida impactando projeção
-- [ ] Testes automatizados cobrindo cenários principais
+- [x] Motor de projeção implementado
+- [x] Cálculos de juros compostos funcionando
+- [x] Timeline de movimentações processada
+- [x] Seguros integrados no cálculo
+- [x] Status de vida impactando projeção
+- [x] Testes automatizados cobrindo cenários principais
 
 ---
 

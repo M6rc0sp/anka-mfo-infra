@@ -50,15 +50,7 @@ postgres_data/
 *.temp
 .cache/
 
-# Local documentation (não comitar)
-STATUS.md
-SETUP_GITHUB.md
-AGENT_GUIDE.md
-REMOTES_SETUP.sh
-push-to-github.sh
-
 # Locks (deixar para rastreamento em monorepo com submodules)
 # package-lock.json
 # pnpm-lock.yaml
 # yarn.lock
-
