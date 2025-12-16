@@ -7,12 +7,12 @@ Implementar todos os endpoints REST necessários para a aplicação, com valida�
 
 ## 🎯 Entregáveis desta Fase
 
-- [ ] Endpoints CRUD para todas entidades
-- [ ] Endpoints específicos de projeção
-- [ ] Validação Zod em todos endpoints
-- [ ] Documentação Swagger completa
-- [ ] Tratamento de erros padronizado
-- [ ] Testes de integração para API
+- [x] Endpoints CRUD para todas entidades
+- [x] Endpoints específicos de projeção
+- [x] Validação Zod em todos endpoints
+- [x] Documentação Swagger completa
+- [x] Tratamento de erros padronizado
+- [x] Testes de integração para API
 
 ---
 

@@ -6,12 +6,12 @@ Configurar toda a infraestrutura base do projeto com Docker, incluindo PostgreSQ
 ---
 
 ## 🎯 Entregáveis desta Fase
-
-- [ ] Estrutura de diretórios criada
-- [ ] docker-compose.yml configurado
-- [ ] PostgreSQL rodando e acessível
-- [ ] Scripts de inicialização do banco
-- [ ] Dockerfiles base para backend e frontend
+ 
+ - [x] Estrutura de diretórios criada
+ - [x] docker-compose.yml configurado
+ - [x] PostgreSQL rodando e acessível
+ - [x] Scripts de inicialização do banco
+ - [x] Dockerfiles base para backend e frontend
 
 ---
 
