@@ -1,5 +1,7 @@
 # Anka MFO - Infraestrutura
 
+[![CI](https://github.com/m6rc0sp/anka-mfo-infra/actions/workflows/ci.yml/badge.svg)](https://github.com/m6rc0sp/anka-mfo-infra/actions/workflows/ci.yml)
+
 Repositório de infraestrutura que orquestra os serviços da plataforma Multi Family Office.
 
 ## 🚀 Quick Start
@@ -293,4 +295,42 @@ Veja documentação específica:
 
 ---
 
-**Status:** ✅ Fase 2 Pronta | **v1.0.0** | Dezembro 2025
+## 📊 Status do Projeto
+
+| Fase | Descrição | Status |
+|------|-----------|--------|
+| 1 | Infraestrutura Base (Docker + DB) | ✅ Concluída |
+| 2 | Backend - Estrutura + API + Tests | ✅ Concluída |
+| 3 | Motor de Projeção | ✅ Concluída |
+| 4 | API REST Avançada | ✅ Concluída |
+| 5 | Frontend - Setup e Layout Base | 🔄 Em progresso |
+| 6 | Frontend - Telas Principais | 🔄 Em progresso |
+| 7 | Integração e Testes E2E | ⏳ Pendente |
+| 8 | Diferenciais (Auth, RBAC) | ⏳ Pendente |
+
+### Backend (35 testes passando ✅)
+- ✅ 7 Entidades de domínio (Client, Simulation, Allocation, Transaction, Insurance, SimulationVersion, User)
+- ✅ 6 Repositories com CRUD completo
+- ✅ Motor de projeção com juros compostos, seguros e status de vida
+- ✅ API REST documentada com Swagger
+- ✅ Validação Zod em todos endpoints
+
+### Frontend
+- ✅ Next.js 16 configurado
+- ✅ Tailwind CSS 3.4 (LTS)
+- ✅ React Query para gerenciamento de estado
+- 🔄 Tela de Projeção (layout base implementado)
+
+## 🤖 CI/CD (GitHub Actions)
+
+O projeto inclui um workflow de CI que roda automaticamente em cada push/PR:
+
+```
+.github/workflows/ci.yml
+├── Backend Tests    → Lint, TypeCheck, 35 testes, Build
+├── Frontend Tests   → Lint, TypeCheck, Build
+├── Docker Build     → Valida imagens Docker
+└── Integration      → Sobe compose e testa endpoints (PRs)
+```
+
+**Status:** ✅ Fase 5 Em Progresso | **v1.1.0** | Dezembro 2025

@@ -28,10 +28,10 @@ Este documento serve como guia completo para desenvolvimento do sistema MFO, div
 |------|-----------|----------------|--------|
 | 1 | Infraestrutura Base (Docker + DB) | 2-3 horas | ✅ CONCLUÍDA |
 | 2 | Backend - Estrutura + API + Tests | 4-6 horas | ✅ CONCLUÍDA |
-| 3 | Backend - Motor de Projeção | 4-6 horas | ⏳ Próxima |
-| 4 | Backend - API REST Avançada | 3-4 horas | ⏳ |
-| 5 | Frontend - Setup e Layout Base | 3-4 horas | ⏳ |
-| 6 | Frontend - Telas Principais | 8-12 horas | ⏳ |
+| 3 | Backend - Motor de Projeção | 4-6 horas | ✅ CONCLUÍDA |
+| 4 | Backend - API REST Avançada | 3-4 horas | ✅ CONCLUÍDA |
+| 5 | Frontend - Setup e Layout Base | 3-4 horas | 🔄 EM ANDAMENTO |
+| 6 | Frontend - Telas Principais | 8-12 horas | 🔄 EM ANDAMENTO |
 | 7 | Integração e Testes | 4-6 horas | ⏳ |
 | 8 | Diferenciais (Auth, RBAC) | 4-6 horas | ⏳ |
 
@@ -93,22 +93,24 @@ anka-mfo/
 - ✅ Error handling centralizado
 
 ### Fase 3 - Motor de Projeção
-- [ ] Cálculo de projeção funcionando
-- [ ] Testes do motor passando
-- [ ] Cenários de vida (normal/morto/inválido) OK
+- [x] Cálculo de projeção funcionando
+- [x] Testes do motor passando (6 testes)
+- [x] Cenários de vida (normal/morto/inválido) OK
 
 ### Fase 4 - API REST
-- [ ] Endpoints avançados documentados
-- [ ] Filtros e paginação funcionando
-- [ ] CRUD completo para todas entidades
+- [x] Endpoints avançados documentados
+- [x] CRUD completo para todas entidades
+- [x] Swagger/OpenAPI funcionando
 
 ### Fase 5 - Frontend Setup
-- [ ] Next.js rodando
-- [ ] shadcn/ui configurado
-- [ ] Layout dark-mode base
+- [x] Next.js 16 rodando
+- [x] Tailwind CSS 3.4 (LTS) configurado
+- [x] React Query configurado
+- [ ] shadcn/ui componentes
 
 ### Fase 6 - Telas
-- [ ] Tela Projeção funcional
+- [x] Tela Projeção (layout base)
+- [ ] Tela Projeção (gráficos com Recharts)
 - [ ] Tela Alocações funcional
 - [ ] Tela Histórico funcional
 
