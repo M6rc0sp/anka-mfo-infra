@@ -69,6 +69,11 @@ jobs:
         env:
           DATABASE_URL: postgresql://anka:anka_secret@localhost:5432/anka_test
           NODE_ENV: test
+          DB_HOST: localhost
+          DB_PORT: 5432
+          DB_USER: anka
+          DB_PASSWORD: anka_secret
+          DB_NAME: anka_test
 
       - name: Build
         run: npm run build
