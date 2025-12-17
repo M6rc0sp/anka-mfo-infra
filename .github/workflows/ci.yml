@@ -64,6 +64,20 @@ jobs:
       - name: Run type check
         run: npm run typecheck --if-present
 
+      - name: Prepare test database
+        run: |
+          echo "Installing postgresql client..."
+          sudo apt-get update -y
+          sudo apt-get install -y postgresql-client
+          echo "Waiting for postgres to be ready..."
+          for i in {1..20}; do
+            pg_isready -h localhost -p 5432 -U anka && break || sleep 3
+          done
+          echo "Applying schema and seed"
+          export PGPASSWORD=anka_secret
+          psql -h localhost -U anka -d anka_test -f ../database/01-schema.sql
+          psql -h localhost -U anka -d anka_test -f ../database/02-seed.sql
+
       - name: Run tests
         run: npm test
         env:
