@@ -61,6 +61,7 @@ services:
       - backend
     volumes:
       - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
     command: npm run dev
     networks:
       - anka-network
