@@ -784,8 +784,8 @@ Sistema de gestão patrimonial para Multi Family Offices.
 
 \`\`\`bash
 # 1. Clonar o repositório
-git clone <repo-url>
-cd mfo
+git clone https://github.com/m6rc0sp/anka-mfo-infra.git
+cd anka-mfo-infra
 
 # 2. Configurar variáveis de ambiente
 cp .env.example .env
